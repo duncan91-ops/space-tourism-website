@@ -1,0 +1,76 @@
+@import "variables";
+
+.main {
+  width: 100%;
+  min-height: 66.7rem;
+  background: url("../assets/home/background-home-mobile.jpg") center / cover
+    no-repeat;
+  padding: 11.2rem 0 4.8rem;
+}
+
+.container {
+  width: 87.2%;
+  max-width: 45rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8.1rem;
+}
+
+.content {
+  width: 100%;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  text-align: center;
+  margin-bottom: 1.6rem;
+}
+
+.top {
+  display: inline-block;
+  font-family: $font-secondary;
+  font-size: 1.6rem;
+  line-height: 19px;
+  color: $color-text-light;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+}
+
+.bottom {
+  display: block;
+  color: $color-white;
+  font-family: $font-primary;
+  font-size: 8rem;
+  font-weight: 400;
+  text-align: center;
+  line-height: 10rem;
+  text-transform: uppercase;
+}
+
+.text {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+  color: $color-text-light;
+}
+
+.explore {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 100px;
+  background-color: $color-white;
+  color: $color-text-dark;
+  font-family: $font-primary;
+  font-weight: 400;
+  font-size: 2rem;
+  letter-spacing: 1.25px;
+  line-height: 2.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}

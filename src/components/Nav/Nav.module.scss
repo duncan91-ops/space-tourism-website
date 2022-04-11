@@ -1,0 +1,58 @@
+@import "../../styles/variables";
+
+.nav {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 25.4rem;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.04);
+  -webkit-backdrop-filter: blur(81.5485px);
+  backdrop-filter: blur(81.5485px);
+  overflow: auto;
+}
+
+.navOpen {
+  display: block;
+}
+
+.top {
+  height: 8.8rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.closeBtn {
+  position: relative;
+  width: 19.09px;
+  height: 19.09px;
+  margin-right: 26.46px;
+}
+
+.items {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  padding-left: 3.2rem;
+}
+
+.item {
+  display: inline-block;
+  color: $color-white;
+  font-size: 1.6rem;
+  font-family: $font-secondary;
+  text-transform: uppercase;
+  letter-spacing: 2.7px;
+  line-height: 1.9rem;
+}
+
+.number {
+  display: inline-block;
+  font-weight: 700;
+  margin-right: 1.4rem;
+}
