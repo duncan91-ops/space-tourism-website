@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./Nav.module.scss";
@@ -9,6 +10,14 @@ type NavProps = {
 };
 
 const Nav = ({ open, closeMenu }: NavProps) => {
+  const listRef = useRef<HTMLUListElement>(null!);
+
+  useEffect(() => {
+    listRef.current.querySelectorAll(".link").forEach((item) => {
+      item.addEventListener("click", closeMenu);
+    });
+  });
+
   return (
     <nav className={`${styles.nav} ${open && styles.navOpen}`}>
       <div className={styles.top}>
@@ -16,7 +25,7 @@ const Nav = ({ open, closeMenu }: NavProps) => {
           <Image src={closeBtn} alt="close menu button" layout="fill" />
         </button>
       </div>
-      <ul className={styles.items}>
+      <ul ref={listRef} className={styles.items}>
         <li className={styles.item}>
           <Link href="/">
             <a className="link">
