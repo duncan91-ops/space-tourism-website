@@ -71,6 +71,11 @@
   letter-spacing: 2.3625px;
   line-height: 1.7rem;
   padding-bottom: 0.8rem;
+  transition: all 0.2s ease-in;
+}
+
+.item:hover {
+  border-bottom: 3px solid rgba($color-white, 0.5);
 }
 
 .active {

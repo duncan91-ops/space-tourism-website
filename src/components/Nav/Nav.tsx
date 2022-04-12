@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { useRouter } from "next/router";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./Nav.module.scss";
@@ -11,6 +12,7 @@ type NavProps = {
 
 const Nav = ({ open, closeMenu }: NavProps) => {
   const listRef = useRef<HTMLUListElement>(null!);
+  const router = useRouter();
 
   useEffect(() => {
     listRef.current.querySelectorAll(".link").forEach((item) => {
@@ -28,28 +30,41 @@ const Nav = ({ open, closeMenu }: NavProps) => {
       <ul ref={listRef} className={styles.items}>
         <li className={styles.item}>
           <Link href="/">
-            <a className="link">
+            <a className={`link ${router.asPath === "/" && styles.active}`}>
               <span className={styles.number}>00</span>Home
             </a>
           </Link>
         </li>
         <li className={styles.item}>
           <Link href="/destination/moon">
-            <a className="link">
+            <a
+              className={`link ${
+                router.pathname === "/destination/[destination]" &&
+                styles.active
+              }`}
+            >
               <span className={styles.number}>01</span>Destination
             </a>
           </Link>
         </li>
         <li className={styles.item}>
           <Link href="/crew/commander">
-            <a className="link">
+            <a
+              className={`link ${
+                router.pathname === "/crew/[crew]" && styles.active
+              }`}
+            >
               <span className={styles.number}>02</span>Crew
             </a>
           </Link>
         </li>
         <li className={styles.item}>
           <Link href="/technology/launch-vehicle">
-            <a className="link">
+            <a
+              className={`link ${
+                router.pathname === "/technology/[technology]" && styles.active
+              }`}
+            >
               <span className={styles.number}>03</span>Technology
             </a>
           </Link>

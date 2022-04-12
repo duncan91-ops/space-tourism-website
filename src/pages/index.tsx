@@ -23,7 +23,7 @@ const Home: NextPage = () => {
             world experience!
           </p>
         </div>
-        <div className={styles.explore}>Explore</div>
+        <button className={`btn ${styles.explore}`}>Explore</button>
       </section>
     </main>
   );
