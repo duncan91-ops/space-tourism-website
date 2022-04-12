@@ -25,7 +25,7 @@ export default function Crew(props: CrewProps) {
   const router = useRouter();
 
   if (!crewMember) {
-    return router.push("/");
+    return router.push("/crew");
   }
 
   return (

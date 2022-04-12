@@ -13,6 +13,11 @@ const nextConfig = {
         destination: "/crew/commander",
         permanent: true,
       },
+      {
+        source: "/technology",
+        destination: "/technology/launch-vehicle",
+        permanent: true,
+      },
     ];
   },
 };

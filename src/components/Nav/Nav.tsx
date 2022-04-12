@@ -34,21 +34,21 @@ const Nav = ({ open, closeMenu }: NavProps) => {
           </Link>
         </li>
         <li className={styles.item}>
-          <Link href="/destination">
+          <Link href="/destination/moon">
             <a className="link">
               <span className={styles.number}>01</span>Destination
             </a>
           </Link>
         </li>
         <li className={styles.item}>
-          <Link href="/crew">
+          <Link href="/crew/commander">
             <a className="link">
               <span className={styles.number}>02</span>Crew
             </a>
           </Link>
         </li>
         <li className={styles.item}>
-          <Link href="/">
+          <Link href="/technology/launch-vehicle">
             <a className="link">
               <span className={styles.number}>03</span>Technology
             </a>

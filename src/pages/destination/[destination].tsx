@@ -26,7 +26,7 @@ export default function Destination(props: DestinationProps) {
   const router = useRouter();
 
   if (!destination) {
-    return router.push("/");
+    return router.push("/destination");
   }
 
   console.log(router.asPath);
