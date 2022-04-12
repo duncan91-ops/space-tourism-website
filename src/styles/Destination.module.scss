@@ -1,0 +1,146 @@
+@import "variables";
+
+.main {
+  width: 100%;
+  // max-height: 85rem;
+  background: url("../assets/destination/background-destination-mobile.jpg")
+    center / cover no-repeat;
+}
+
+.container {
+  width: 87.2%;
+  max-width: 45rem;
+  margin: 0 auto;
+  padding: 8.8rem 0 5.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.6rem;
+}
+
+.header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.pick {
+  display: inline-block;
+  font-size: 1.6rem;
+  font-family: $font-secondary;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $color-white;
+  line-height: 1.9rem;
+  letter-spacing: 2.7px;
+}
+
+.number {
+  display: inline-block;
+  margin-right: 1.8rem;
+  font-weight: 700;
+  opacity: 0.25;
+}
+
+.imgContainer {
+  display: inline-block;
+  margin: 0 auto;
+  width: 17rem;
+  height: 17rem;
+  position: relative;
+}
+
+.content {
+  text-align: center;
+}
+
+.items {
+  width: 24rem;
+  margin: 0 auto 2rem;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.item {
+  display: inline-block;
+  color: $color-white;
+  font-size: 1.4rem;
+  font-family: $font-secondary;
+  text-transform: uppercase;
+  letter-spacing: 2.3625px;
+  line-height: 1.7rem;
+  padding-bottom: 0.8rem;
+}
+
+.active {
+  border-bottom: 3px solid $color-white;
+}
+
+.title {
+  display: inline-block;
+  font-family: $font-primary;
+  text-transform: uppercase;
+  font-size: 5.6rem;
+  line-height: 6.4rem;
+  color: $color-white;
+  text-align: center;
+}
+
+.text {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+  color: $color-text-light;
+}
+
+.divider {
+  margin: 3.2rem 0;
+  width: 100%;
+  height: 1px;
+  background: $color-secondary-dark;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.distance,
+.travel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 6.1rem;
+}
+
+.distance {
+  width: 21.6rem;
+}
+
+.travel {
+  width: 22.3rem;
+}
+
+.description {
+  font-family: $font-secondary;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.7rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-text-light;
+  letter-spacing: 2.3625px;
+}
+
+.value {
+  font-family: $font-primary;
+  font-size: 2.8rem;
+  font-weight: 400;
+  line-height: 3.2rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-white;
+}

@@ -18,28 +18,28 @@ const Nav = ({ open, closeMenu }: NavProps) => {
       </div>
       <ul className={styles.items}>
         <li className={styles.item}>
-          <Link href="">
+          <Link href="/">
             <a className="link">
               <span className={styles.number}>00</span>Home
             </a>
           </Link>
         </li>
         <li className={styles.item}>
-          <Link href="">
+          <Link href="/destination">
             <a className="link">
               <span className={styles.number}>01</span>Destination
             </a>
           </Link>
         </li>
         <li className={styles.item}>
-          <Link href="">
+          <Link href="/">
             <a className="link">
               <span className={styles.number}>02</span>Crew
             </a>
           </Link>
         </li>
         <li className={styles.item}>
-          <Link href="">
+          <Link href="/">
             <a className="link">
               <span className={styles.number}>03</span>Technology
             </a>
