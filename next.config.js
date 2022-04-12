@@ -10,7 +10,7 @@ const nextConfig = {
       },
       {
         source: "/crew",
-        destination: "/crew/douglas",
+        destination: "/crew/commander",
         permanent: true,
       },
     ];

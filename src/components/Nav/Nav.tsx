@@ -41,7 +41,7 @@ const Nav = ({ open, closeMenu }: NavProps) => {
           </Link>
         </li>
         <li className={styles.item}>
-          <Link href="/">
+          <Link href="/crew">
             <a className="link">
               <span className={styles.number}>02</span>Crew
             </a>
