@@ -78,14 +78,14 @@
 
 .explore::before {
   content: "";
-  width: 24rem;
-  height: 24rem;
+  width: 150%;
+  height: 150%;
   border-radius: 100%;
   background-color: rgba($color-white, 0.1);
   position: absolute;
-  top: 0;
-  left: 0;
-  transform: translate(-20%, -20%);
+  top: -100%;
+  left: -100%;
+  transform: translate(50%, 50%);
   transition: all 0.3s ease-in;
   opacity: 0;
 }
