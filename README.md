@@ -35,7 +35,7 @@ Users should be able to:
 
 #### Mobile Screenshot
 
-![My Mobile View Screenshot]('./screenshot-mobile.png)
+![My Mobile View Screenshot](./screenshot-mobile.png)
 
 ### Links
 
