@@ -187,3 +187,76 @@
     line-height: 2.8rem;
   }
 }
+
+@media screen and (min-width: 1440px) {
+  .main {
+    height: 90rem;
+    background: linear-gradient(
+        to top,
+        rgba($color-text-dark, 0.25),
+        rgba($color-text-dark, 0.25)
+      ),
+      url("../assets/crew/background-crew-desktop.jpg") center / cover no-repeat;
+    padding: 21.2rem 0 0 16.55rem;
+  }
+
+  .pick {
+    margin: 0;
+    font-size: 2.8rem;
+    line-height: 3.4rem;
+    letter-spacing: 4.725px;
+  }
+
+  .number {
+    margin-right: 2.4rem;
+  }
+
+  .container {
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    justify-content: flex-start;
+    height: 100%;
+    width: 93%;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .imgContainer {
+    height: 100%;
+  }
+
+  .content {
+    height: 100%;
+    padding-top: 15.4rem;
+    padding-bottom: 9.4rem;
+    justify-content: space-between;
+  }
+
+  .role,
+  .name,
+  .bio {
+    text-align: left;
+  }
+
+  .role {
+    font-size: 3.2rem;
+    line-height: 3.7rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .name {
+    font-size: 5.6rem;
+    line-height: 6.4rem;
+    margin-bottom: 2.7rem;
+  }
+
+  .bio {
+    width: 44.4rem;
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+  }
+
+  .items {
+    justify-content: flex-start;
+  }
+}
