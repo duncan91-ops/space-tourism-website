@@ -136,3 +136,59 @@
     letter-spacing: 2px;
   }
 }
+
+@media screen and (min-width: 1440px) {
+  .main {
+    height: 90rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    // align-items: center;
+    padding-bottom: 13.1rem;
+    background: url("../assets/home/background-home-desktop.jpg") center / cover
+      no-repeat;
+  }
+
+  .container {
+    padding: 0 16.5rem;
+    width: 100%;
+    max-width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .content {
+    width: 45rem;
+  }
+
+  .title {
+    text-align: left;
+  }
+
+  .top,
+  .bottom,
+  .text {
+    text-align: left;
+  }
+
+  .top {
+    font-size: 2.8rem;
+    line-height: 3.4rem;
+    letter-spacing: 4.725px;
+  }
+
+  .bottom {
+    line-height: 17.2rem;
+  }
+
+  .text {
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+  }
+
+  .explore {
+    width: 27.4rem;
+    height: 27.4rem;
+  }
+}
