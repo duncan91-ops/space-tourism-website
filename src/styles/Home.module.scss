@@ -38,6 +38,7 @@
   color: $color-text-light;
   letter-spacing: 2.7px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .bottom {
@@ -61,7 +62,7 @@
 .explore {
   width: 15rem;
   height: 15rem;
-  border-radius: 100px;
+  border-radius: 100%;
   background-color: $color-white;
   color: $color-text-dark;
   font-family: $font-primary;
@@ -92,4 +93,46 @@
 
 .explore:hover::before {
   opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    padding: 20.2rem 0 9rem;
+    background: url("../assets/home/background-home-tablet.jpg") center / cover
+      no-repeat;
+  }
+
+  .container {
+    width: 45rem;
+    gap: 15.6rem;
+  }
+
+  .title {
+    gap: 2.4rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .top {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    letter-spacing: 3.375px;
+  }
+
+  .bottom {
+    font-size: 15rem;
+    line-height: 15rem;
+  }
+
+  .text {
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+  }
+
+  .explore {
+    width: 24.2rem;
+    height: 24.2rem;
+    font-size: 3.2rem;
+    line-height: 3.7rem;
+    letter-spacing: 2px;
+  }
 }
