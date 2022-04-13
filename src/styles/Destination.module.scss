@@ -222,3 +222,83 @@
     gap: 1.1rem;
   }
 }
+
+@media screen and (min-width: 1440px) {
+  .main {
+    min-height: 90rem;
+    padding: 21.2rem 16.3rem 11.2rem 16.65rem;
+    display: flex;
+    background: url("../assets/destination/background-destination-desktop.jpg")
+      center / cover no-repeat;
+  }
+
+  .container {
+    height: 100%;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 15.7rem;
+  }
+
+  .header {
+    width: 50%;
+    gap: 9.7rem;
+  }
+
+  .pick {
+    font-size: 2.8rem;
+    line-height: 3.4rem;
+    letter-spacing: 4.725px;
+  }
+
+  .number {
+    margin-right: 2.8rem;
+  }
+
+  .imgContainer {
+    width: 44.5rem;
+    height: 44.5rem;
+  }
+
+  .content {
+    text-align: left;
+    width: 44.5rem;
+  }
+
+  .items {
+    margin: 0 0 3.7rem;
+  }
+
+  .title {
+    margin-bottom: 1.4rem;
+    font-size: 10rem;
+    line-height: 11.5rem;
+  }
+
+  .text {
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    text-align: left;
+  }
+
+  .divider {
+    margin-top: 5.4rem;
+  }
+
+  .details {
+    justify-content: flex-start;
+    gap: 6.6rem;
+  }
+
+  .distance {
+    width: auto;
+  }
+
+  .travel {
+    width: auto;
+  }
+
+  .description,
+  .value {
+    text-align: left;
+  }
+}
