@@ -1,8 +1,11 @@
 import type { NextPage } from "next";
+import { useRouter } from "next/router";
 import Head from "next/head";
 import styles from "../styles/Home.module.scss";
 
 const Home: NextPage = () => {
+  const router = useRouter();
+
   return (
     <main className={styles.main}>
       <Head>
@@ -23,7 +26,12 @@ const Home: NextPage = () => {
             world experience!
           </p>
         </div>
-        <button className={`btn ${styles.explore}`}>Explore</button>
+        <button
+          onClick={() => router.push("/destination/moon")}
+          className={`btn ${styles.explore}`}
+        >
+          Explore
+        </button>
       </section>
     </main>
   );

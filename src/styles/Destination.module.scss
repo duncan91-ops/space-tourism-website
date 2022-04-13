@@ -225,18 +225,21 @@
 
 @media screen and (min-width: 1440px) {
   .main {
+    width: 100%;
     min-height: 90rem;
     padding: 21.2rem 16.3rem 11.2rem 16.65rem;
-    display: flex;
+    // display: flex;
     background: url("../assets/destination/background-destination-desktop.jpg")
       center / cover no-repeat;
   }
 
   .container {
+    margin: 0;
     height: 100%;
     flex-direction: row;
     align-items: flex-end;
     gap: 15.7rem;
+    justify-content: space-between;
   }
 
   .header {

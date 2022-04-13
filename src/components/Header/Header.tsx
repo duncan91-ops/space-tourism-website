@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import Nav from "../Nav/Nav";
 import styles from "./Header.module.scss";
 import logo from "../../assets/shared/logo.svg";
@@ -10,9 +11,11 @@ const Header = () => {
 
   return (
     <header className={styles.header}>
-      <div className={styles.logoBox}>
-        <Image src={logo} alt="logo" layout="responsive" />
-      </div>
+      <Link href="/" passHref>
+        <div className={styles.logoBox}>
+          <Image src={logo} alt="logo" layout="responsive" />
+        </div>
+      </Link>
       <button
         onClick={() => setIsOpen(true)}
         className={`btn ${styles.navBtn}`}
