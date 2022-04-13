@@ -1,16 +1,16 @@
 .header {
   height: 8.8rem;
-  width: 100%;
+  width: 93.6%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: absolute;
-  left: 0;
+  right: 0;
   top: 0;
 }
 
 .logoBox {
-  margin-left: 2.4rem;
+  // margin-left: 2.4rem;
   display: block;
   width: 4rem;
   height: 4rem;
@@ -21,4 +21,20 @@
   margin-right: 2.4rem;
   height: 2.1rem;
   width: 2.4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    width: 94.92%;
+    height: 9.6rem;
+  }
+
+  .logoBox {
+    width: 4.8rem;
+    height: 4.8rem;
+  }
+
+  .navBtn {
+    display: none;
+  }
 }
