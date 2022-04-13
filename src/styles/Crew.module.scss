@@ -34,7 +34,7 @@
 
 .container {
   width: 87.2%;
-  max-width: 45rem;
+  max-width: 45.8rem;
   margin: 0 auto;
   // padding: 8.8rem 0 0;
   display: flex;
@@ -43,6 +43,7 @@
 }
 
 .imgContainer {
+  text-align: center;
   width: 100%;
   height: 22.3rem;
   border-bottom: 1px solid $color-secondary-dark;
@@ -54,11 +55,14 @@
 
 .content {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
 }
 
 .items {
   list-style-type: none;
-  margin: 0 auto 3.2rem;
+  // margin: 0 auto 3.2rem;
   display: flex;
   justify-content: center;
   gap: 1.6rem;
@@ -120,4 +124,66 @@
   line-height: 2.5rem;
   text-align: center;
   color: $color-text-light;
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    padding-top: 13.6rem;
+    text-align: left;
+    height: 102.4rem;
+    // overflow: hidden;
+    background: linear-gradient(
+        to top,
+        rgba($color-text-dark, 0.25),
+        rgba($color-text-dark, 0.25)
+      ),
+      url("../assets/crew/background-crew-tablet.jpg") center / cover no-repeat;
+  }
+
+  .pick {
+    margin-left: 3.85rem;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    letter-spacing: 3.375px;
+    margin-bottom: 6rem;
+  }
+
+  .container {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .imgContainer {
+    display: inline-block;
+    border-bottom: none;
+    // min-height: 53.2rem;
+    height: 57.2rem;
+    width: auto;
+    text-align: center;
+  }
+
+  .imgContainer img {
+    height: 93%;
+  }
+
+  .content {
+    flex-direction: column-reverse;
+    gap: 4rem;
+  }
+
+  .role {
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+  }
+
+  .name {
+    font-size: 4rem;
+    line-height: 4.6rem;
+  }
+
+  .bio {
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+  }
 }
