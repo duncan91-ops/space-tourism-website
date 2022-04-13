@@ -22,6 +22,7 @@ const Nav = ({ open, closeMenu }: NavProps) => {
 
   return (
     <nav className={`${styles.nav} ${open && styles.navOpen}`}>
+      <div className={styles.divider}></div>
       <div className={styles.top}>
         <button onClick={closeMenu} className={`btn ${styles.closeBtn}`}>
           <Image src={closeBtn} alt="close menu button" layout="fill" />
